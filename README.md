@@ -31,4 +31,4 @@ Desenvolvido como parte da disciplina **CSI607 – Sistemas Web II**.
 
 ## 🌐 Porta da aplicação
 
-A aplicação está configurada para executar na porta:
+A aplicação está configurada para executar na porta: 4000
