@@ -1,20 +1,34 @@
-# Microsserviço de Vendas (Sales)
+# 🎟️ Microsserviço de Vendas (Sales)
 
-Microsserviço responsável pelo cadastro de eventos e venda de ingressos.
+Microsserviço responsável pelo gerenciamento de **eventos** e **vendas de ingressos** do sistema de tickets.
 
-## Tecnologias
+Desenvolvido como parte da disciplina **CSI607 – Sistemas Web II**.
+
+---
+
+## 🧱 Responsabilidades
+
+- Cadastro de eventos
+- Consulta de eventos
+- Atualização de eventos
+- Remoção de eventos
+- Registro de vendas de ingressos
+- Consulta de vendas
+- Atualização do status da venda
+- Remoção de vendas
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
 - Java
 - Spring Boot
 - Spring Data JPA
 - H2 Database
+- Maven
 
-## Porta
-Aplicação configurada para rodar na porta 4000.
+---
 
-## Como executar
-1. Rodar a classe SalesApplication
-2. Acessar via Postman em:
-   http://localhost:4000
+## 🌐 Porta da aplicação
 
-## Console do banco
-http://localhost:4000/h2-console
+A aplicação está configurada para executar na porta:
