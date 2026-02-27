@@ -1,0 +1,67 @@
+@baseUrl = http://localhost:4000
+@eventId = 11111111-1111-1111-1111-111111111111
+@saleId = 33333333-3333-3333-3333-333333333333
+
+### Health check via list events
+GET {{baseUrl}}/events
+
+### Create event
+POST {{baseUrl}}/events
+Content-Type: application/json
+
+{
+  "description": "Teatro da Primavera",
+  "type": "TEATRO",
+  "dateTime": "2026-05-20T20:00:00",
+  "startingSales": "2026-05-01T08:00:00",
+  "endingSales": "2026-05-19T23:00:00",
+  "price": 85.5
+}
+
+### Get event by id
+GET {{baseUrl}}/events/{{eventId}}
+
+### Update event
+PUT {{baseUrl}}/events/{{eventId}}
+Content-Type: application/json
+
+{
+  "description": "Teatro da Primavera - Atualizado",
+  "type": "TEATRO",
+  "dateTime": "2026-05-21T20:00:00",
+  "startingSales": "2026-05-01T08:00:00",
+  "endingSales": "2026-05-20T23:00:00",
+  "price": 90.0
+}
+
+### Delete event
+DELETE {{baseUrl}}/events/{{eventId}}
+
+### List sales
+GET {{baseUrl}}/sales
+
+### Create sale
+POST {{baseUrl}}/sales
+Content-Type: application/json
+
+{
+  "userId": "92ff4138-3ae5-4282-a918-46a663c17629",
+  "eventId": "11111111-1111-1111-1111-111111111111",
+  "status": "EM_ABERTO"
+}
+
+### Get sale by id
+GET {{baseUrl}}/sales/{{saleId}}
+
+### Update sale
+PUT {{baseUrl}}/sales/{{saleId}}
+Content-Type: application/json
+
+{
+  "userId": "92ff4138-3ae5-4282-a918-46a663c17629",
+  "eventId": "11111111-1111-1111-1111-111111111111",
+  "status": "PAGO"
+}
+
+### Delete sale
+DELETE {{baseUrl}}/sales/{{saleId}}
